@@ -8,6 +8,7 @@
   <title>JS on steroids</title>
 </head>
 <body>
+  <!-- container 1 -->
   <div class="container-1">
     <h2>Your Age in Days</h2>
     <div class="flex-box-container-1">
@@ -25,16 +26,30 @@
       </div>
     </div>
   </div>
-
+<!-- container 2 -->
   <div class="container-2">
     <h2>Cat Generator</h2>
-    
+
     <div class="btn-container">
       <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
     <button class="btn btn-danger" id="cat-generator" onclick="resetCatGen()">Reset</button>
     </div>
     
     <div class="flex-box-container-2" id="flex-cat-gen"></div>
+  </div>
+
+  <!-- container 3 -->
+  <div class="container-3">
+    <h2>Rock, Paper, Scissors</h2>
+
+    <div class="flex-box-rps" id="flex-box-rps-div">
+      <img id="rock" src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" alt="" height="150" width="150" onclick="rpsGame(this)">
+      <img id="paper" src="http://images.clipartpanda.com/paper-clipart-nexxuz-Loose-Leaf-Paper.png" alt="" height="150" width="150" onclick="rpsGame(this)">
+      <img id="scissors" src="https://thumbs.dreamstime.com/b/female-hand-sign-victory-sign-peace-sign-scissors-vector-color-flat-illustration-isolated-white-background-web-83128345.jpg" alt="" height="150" width="150" onclick="rpsGame(this)">
+    </div>
+
+    <button class="btn btn-primary" id="cat-generator" onclick="resetRps()">Play Again</button>
+    
   </div>
 
   <script src="static/js/script.js"></script>
